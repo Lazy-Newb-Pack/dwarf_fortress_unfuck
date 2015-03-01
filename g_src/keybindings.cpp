@@ -813,6 +813,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_ADD, "BUILDJOB_ADD");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_CANCEL, "BUILDJOB_CANCEL");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_PROMOTE, "BUILDJOB_PROMOTE");
+	bindingNames.insert(INTERFACEKEY_BUILDJOB_NOW, "BUILDJOB_NOW");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_REPEAT, "BUILDJOB_REPEAT");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_SUSPEND, "BUILDJOB_SUSPEND");
 	bindingNames.insert(INTERFACEKEY_BUILDJOB_WORKSHOP_PROFILE, "BUILDJOB_WORKSHOP_PROFILE");
@@ -972,6 +973,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_MANAGER_MAX, "MANAGER_MAX");
 	bindingNames.insert(INTERFACEKEY_MANAGER_WAGES, "MANAGER_WAGES");
 	bindingNames.insert(INTERFACEKEY_PET_BUTCHER, "PET_BUTCHER");
+	bindingNames.insert(INTERFACEKEY_PET_GELD, "PET_GELD");
 	bindingNames.insert(INTERFACEKEY_ANIMAL_SELECT_TRAINER, "ANIMAL_SELECT_TRAINER");
 	bindingNames.insert(INTERFACEKEY_ANIMAL_WAR_TRAINING, "ANIMAL_WAR_TRAINING");
 	bindingNames.insert(INTERFACEKEY_ANIMAL_HUNTING_TRAINING, "ANIMAL_HUNTING_TRAINING");
@@ -1059,6 +1061,9 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_FORTIFY, "DESIGNATE_FORTIFY");
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_TRACK, "DESIGNATE_TRACK");
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_TOGGLE_ENGRAVING, "DESIGNATE_TOGGLE_ENGRAVING");
+	bindingNames.insert(INTERFACEKEY_DESIGNATE_STANDARD_MARKER, "DESIGNATE_STANDARD_MARKER");
+	bindingNames.insert(INTERFACEKEY_DESIGNATE_MINE_MODE, "DESIGNATE_MINE_MODE");
+	bindingNames.insert(INTERFACEKEY_DESIGNATE_TOGGLE_MARKER, "DESIGNATE_TOGGLE_MARKER");
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_UNDO, "DESIGNATE_UNDO");
 	bindingNames.insert(INTERFACEKEY_DESIGNATE_REMOVE_CONSTRUCTION, "DESIGNATE_REMOVE_CONSTRUCTION");
 	bindingNames.insert(INTERFACEKEY_BUILDING_DIM_Y_UP, "BUILDING_DIM_Y_UP");
@@ -1111,6 +1116,7 @@ void keybinding_init() {
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_FOLLOW, "UNITVIEW_FOLLOW");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_NEXT, "UNITVIEW_NEXT");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_SLAUGHTER, "UNITVIEW_SLAUGHTER");
+	bindingNames.insert(INTERFACEKEY_UNITVIEW_GELD, "UNITVIEW_GELD");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_GEN_COMBAT, "UNITVIEW_GEN_COMBAT");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_GEN_LABOR, "UNITVIEW_GEN_LABOR");
 	bindingNames.insert(INTERFACEKEY_UNITVIEW_GEN_MISC, "UNITVIEW_GEN_MISC");
@@ -2291,6 +2297,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_BUILDJOB_ADD, "Buildjob: Add");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_CANCEL, "Buildjob: Cancel");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_PROMOTE, "Buildjob: Promote");
+	displayNames.insert(INTERFACEKEY_BUILDJOB_NOW, "Buildjob: Now");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_REPEAT, "Buildjob: Repeat");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_SUSPEND, "Buildjob: Suspend");
 	displayNames.insert(INTERFACEKEY_BUILDJOB_WORKSHOP_PROFILE, "Buildjob: Workshop Profile");
@@ -2450,6 +2457,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_MANAGER_MAX, "Manager, Max");
 	displayNames.insert(INTERFACEKEY_MANAGER_WAGES, "Manager, Wages");
 	displayNames.insert(INTERFACEKEY_PET_BUTCHER, "Animals, Slaughter");
+	displayNames.insert(INTERFACEKEY_PET_GELD, "Animals, Geld");
 	displayNames.insert(INTERFACEKEY_ANIMAL_SELECT_TRAINER, "Animals, Trainer");
 	displayNames.insert(INTERFACEKEY_ANIMAL_WAR_TRAINING, "Animals, War Training");
 	displayNames.insert(INTERFACEKEY_ANIMAL_HUNTING_TRAINING, "Animals, Hunting Training");
@@ -2537,6 +2545,9 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_DESIGNATE_FORTIFY, "Designate, Fortify");
 	displayNames.insert(INTERFACEKEY_DESIGNATE_TRACK, "Designate, Carve Track");
 	displayNames.insert(INTERFACEKEY_DESIGNATE_TOGGLE_ENGRAVING, "Designate, Toggle Engraving");
+	displayNames.insert(INTERFACEKEY_DESIGNATE_STANDARD_MARKER, "Designate, Standard/Marker");
+	displayNames.insert(INTERFACEKEY_DESIGNATE_MINE_MODE, "Designate, Mine Mode");
+	displayNames.insert(INTERFACEKEY_DESIGNATE_TOGGLE_MARKER, "Designate, Toggle Marker");
 	displayNames.insert(INTERFACEKEY_DESIGNATE_UNDO, "Designate, Undo");
 	displayNames.insert(INTERFACEKEY_DESIGNATE_REMOVE_CONSTRUCTION, "Designate, Remove Construction");
 	displayNames.insert(INTERFACEKEY_BUILDING_DIM_Y_UP, "Building, Change Height +");
@@ -2589,6 +2600,7 @@ void keybinding_init() {
 	displayNames.insert(INTERFACEKEY_UNITVIEW_NEXT, "Unitview, Next Unit");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_FOLLOW, "Unitview, Follow");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_SLAUGHTER, "Unitview, Slaughter");
+	displayNames.insert(INTERFACEKEY_UNITVIEW_GELD, "Unitview, Geld");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_GEN_COMBAT, "Unitview, General, Combat");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_GEN_LABOR, "Unitview, General, Labor");
 	displayNames.insert(INTERFACEKEY_UNITVIEW_GEN_MISC, "Unitview, General, Misc");
